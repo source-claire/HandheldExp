@@ -26,35 +26,35 @@ class EmulatorModule(context: Context, overlayViewModel: OverlayViewModel, overl
     private var oldMenuFrameWidth = 0
 
     private val quickLoad = ButtonItem(
-        label = "Quick Load", key = "quick_load", sortKey = "b",
+        label = "クイックロード", key = "quick_load", sortKey = "b",
         disabled = true
     ) {
         onQuickLoad()
     }
 
     private val quickSave = ButtonItem(
-        label = "Quick Save", key = "quick_save", sortKey = "c",
+        label = "クイックセーブ", key = "quick_save", sortKey = "c",
         disabled = true
     ) {
         onQuickSave()
     }
 
     private var keySetupInfo = TextItem(
-        label = "Please check the HandheldExp GitHub page on how to Setup Up Save Sates",
+        label = "HandheldExpのGitHubページでステートセーブの設定方法を確認してください。",
         key = "key_setup_info",
         sortKey = "a",
         path = listOf("settings", "emulator_key_setup"),
     )
 
     private val emulatorKeySetup = NavigationItem(
-        label = "Load/Save Setup",
+        label = "ロード/セーブ設定",
         key = "emulator_key_setup",
         path = listOf("settings"),
         sortKey = "l0"
     )
 
     private val setQuickLoad = ButtonItem(
-        label = "Set Quick Load",
+        label = "クイックロードを設定",
         key = "set_quick_load",
         sortKey = "l3",
         path = listOf("settings", "emulator_key_setup"),
@@ -66,7 +66,7 @@ class EmulatorModule(context: Context, overlayViewModel: OverlayViewModel, overl
     }
 
     private val setQuickSave = ButtonItem(
-        label = "Set Quick Save",
+        label = "クイックセーブを設定",
         key = "set_quick_load",
         sortKey = "l4",
         path = listOf("settings", "emulator_key_setup"),
@@ -78,7 +78,7 @@ class EmulatorModule(context: Context, overlayViewModel: OverlayViewModel, overl
     }
 
     private var toggleKeySetup = ButtonItem(
-        label = "Start Load/Save Setup",
+        label = "ロード/セーブ設定を開始",
         key = "toggle_key_setup",
         sortKey = "l1",
         path = listOf("settings", "emulator_key_setup")
@@ -87,7 +87,7 @@ class EmulatorModule(context: Context, overlayViewModel: OverlayViewModel, overl
     }
 
     private val toggleSetupAlignment = ButtonItem(
-        label = "Switch Menu side",
+        label = "メニュー配置の変更",
         key = "toggle_setup_alignment",
         sortKey = "l2",
         path = listOf("settings", "emulator_key_setup"),
